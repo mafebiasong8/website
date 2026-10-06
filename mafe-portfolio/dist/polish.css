@@ -1,0 +1,54 @@
+/* Crisp blue accents, deeper surfaces, and restrained interactive motion. */
+:root{--blue:#2858e8;--pale:#f3f6fc}
+body{background:#fcfdff}
+header{background:rgba(252,253,255,.96)}
+.hero{background:radial-gradient(ellipse at 95% 25%,#e8efff 0,transparent 48%)}
+.hero h1{letter-spacing:-2.8px}
+.hero h1>span{background:linear-gradient(115deg,#2452dc,#5578ed);background-clip:text;-webkit-background-clip:text;color:transparent}
+.identity{background:linear-gradient(145deg,#203755,#101e35);border:1px solid #344d70;box-shadow:0 24px 55px -25px #10284770;border-radius:18px;transform:rotate(2deg)}
+.identity-top{font-size:12px;letter-spacing:.8px}
+.identity-rule{background:linear-gradient(90deg,#7195ca,#344d70)}
+.button,.nav-contact{border-radius:9px;transition:transform .25s ease,box-shadow .25s ease,background .25s ease}
+.primary{box-shadow:0 7px 18px -9px #2858e899}
+.button:active{transform:translateY(1px)}
+.projects{background:linear-gradient(160deg,#edf2fc,#f7f9fd 65%)}
+.project{position:relative;border-color:#d7e0f0;border-radius:18px;box-shadow:0 8px 28px -20px #142b5055;transition:transform .45s cubic-bezier(.2,.7,.2,1),box-shadow .45s ease,border-color .45s ease}
+.project-display{position:relative;isolation:isolate;background:linear-gradient(145deg,#e6efff,#cdddfa);transition:background .45s ease}
+.project-display:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(120deg,transparent 25%,#ffffff80 50%,transparent 75%);transform:translateX(-120%);transition:transform .85s cubic-bezier(.2,.7,.2,1);pointer-events:none}
+.project-display>div:nth-child(2){transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.project-display h3{transition:letter-spacing .5s ease,color .5s ease;transform-origin:left center}
+.project-display-top{font-size:12px;letter-spacing:.7px}
+.project-info .eyebrow{font-size:12px;letter-spacing:1px}
+.project-info h3{transition:color .3s ease}
+.project-info details{margin-top:22px}
+.project-info summary{padding:5px 0;transition:color .25s ease}
+.project-info details[open] summary{color:var(--blue)}
+.project-info details[open] p{animation:detail-in .3s ease both}
+.project-campus .project-display{background:linear-gradient(145deg,#263e63,#111e35)}
+.display-tags span{background:#ffffff38;transition:background .35s ease,border-color .35s ease}
+.project-campus .display-tags span{background:#ffffff08}
+.project:focus-within{border-color:#82a1f1;box-shadow:0 18px 45px -25px #2858e87a}
+.skill-grid article{background:#fff;border:1px solid #e0e7f3;border-radius:14px;padding:25px;box-shadow:0 8px 22px -22px #152740;transition:transform .3s ease,border-color .3s ease}
+.skill-number{display:inline-block;font-weight:700;padding-bottom:6px;border-bottom:2px solid #9bb8ff}
+.chips span{background:#f3f6fc;border-color:#e3e9f5;border-radius:6px}
+.certifications>div{border-color:#dce5f4}
+.certificate-actions a{border-radius:7px;transition:background .25s ease,box-shadow .25s ease,transform .25s ease}
+.contact{background:linear-gradient(130deg,#1d3354,#101d33)}
+.contact-links a{transition:color .25s ease,padding-left .3s ease}
+.contact h2 em{color:#b2cbff}
+@keyframes detail-in{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+@media(hover:hover) and (pointer:fine){
+ .project:hover{transform:translateY(-7px);border-color:#97b2f1;box-shadow:0 26px 55px -25px #193b7e5c}
+ .project:hover .project-display:before{transform:translateX(120%)}
+ .project:hover .project-display>div:nth-child(2){transform:translateY(-5px)}
+ .project:hover .project-display h3{letter-spacing:-1.5px}
+ .project:hover .project-info h3{color:#2858e8}
+ .project:hover .display-tags span{background:#ffffff70;border-color:#819dc5}
+ .project-campus:hover .display-tags span{background:#ffffff15;border-color:#7791b8}
+ .button:hover,.certificate-actions a:hover{transform:translateY(-2px);box-shadow:0 9px 20px -12px #1b3b7680}
+ .skill-grid article:hover{transform:translateY(-4px);border-color:#a9bff2}
+ .contact-links a:hover{padding-left:8px}
+}
+@media(max-width:1000px){.hero h1{letter-spacing:-2px}.skill-grid{gap:16px}.skill-grid article{padding:20px}}
+@media(max-width:700px){.hero h1{letter-spacing:-1.8px}.identity{transform:none;border-radius:14px}.project{border-radius:14px}.skill-grid{gap:20px}.skill-grid article{padding:24px}.project-display-top{font-size:12px;letter-spacing:.4px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.identity,.project:hover,.project:hover .project-display>div:nth-child(2),.button:hover,.certificate-actions a:hover,.skill-grid article:hover{transform:none!important}.project-display:before{display:none}}

@@ -1,0 +1,5 @@
+.certifications .certificate-actions{grid-column:2/-1;display:flex;flex-wrap:wrap;gap:10px;padding:0;border:0}
+.certificate-actions a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:8px 14px;border:1px solid var(--line);border-radius:5px;font-size:14px;font-weight:600;line-height:1.5}
+.certificate-actions a:first-child{background:var(--blue);border-color:var(--blue);color:white}
+.certificate-actions a:first-child:hover{background:#1842ac;border-color:#1842ac}
+.certificate-actions a:last-child:hover{background:var(--pale);border-color:#a9bdd9}

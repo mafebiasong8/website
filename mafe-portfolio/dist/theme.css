@@ -1,0 +1,39 @@
+:root{color-scheme:light}
+.theme-toggle{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:9px 13px;background:transparent;border:1px solid #626a7c;color:inherit;font:600 14px 'DM Sans',Arial,sans-serif;cursor:pointer;white-space:nowrap;transition:background .25s ease,border-color .25s ease}
+.theme-toggle[hidden]{display:none}.theme-toggle:hover{background:#ffffff12;border-color:#b7c2ff}.theme-toggle:focus-visible{outline:3px solid #6ba3ff;outline-offset:5px}.theme-symbol{font-size:19px;line-height:1}
+html[data-theme="light"] header,html[data-theme="light"] .hero{background:#edf0ff;color:#171b25}
+html[data-theme="light"] header{border-color:#ccd4ee}
+html[data-theme="light"] header .brand span,html[data-theme="light"] .hero h1>span{color:#344ef4}
+html[data-theme="light"] nav a:hover{color:#344ef4}
+html[data-theme="light"] .nav-contact,html[data-theme="light"] .theme-toggle,html[data-theme="light"] .secondary{border-color:#9faecc}
+html[data-theme="light"] .theme-toggle:hover,html[data-theme="light"] .secondary:hover{background:#dce3ff;color:#171b25}
+html[data-theme="light"] .hero .intro,html[data-theme="light"] .hero-description,html[data-theme="light"] .hero-top .location{color:#505e78}
+html[data-theme="light"] .identity{color:#171b25;border-color:#a5b3d3}
+html[data-theme="light"] .identity-top,html[data-theme="light"] .focus-list span,html[data-theme="light"] .identity-label{color:#344ef4}
+html[data-theme="light"] .focus-list p{border-color:#c5cfea}
+html[data-theme="light"] .identity-bottom p{color:#505e78}
+html[data-theme="light"] .hero-footer{border-color:#c5cfea;color:#505e78}
+html[data-theme="light"] .hero-footer a{color:#171b25}
+html[data-theme="light"] .primary{background:#344ef4;color:#fff}
+html[data-theme="light"] .primary:hover{background:#2339c8}
+html[data-theme="dark"]{color-scheme:dark;--ink:#edf1ff;--muted:#b4bfd3;--line:#354156;--pale:#253047;--blue:#b7c2ff}
+html[data-theme="dark"] body,html[data-theme="dark"] .learning{background:#131b2a;color:#edf1ff}
+html[data-theme="dark"] header,html[data-theme="dark"] .hero{background:#0c1320}
+html[data-theme="dark"] .projects{background:#1a2334}
+html[data-theme="dark"] .project{background:#222e43}
+html[data-theme="dark"] .project-display{background:#344ef4}
+html[data-theme="dark"] .project-campus .project-display{background:#344463;color:#edf1ff}
+html[data-theme="dark"] .project-campus .project-display h3{color:#edf1ff}
+html[data-theme="dark"] .project-campus .project-display h3 span{color:#b7c2ff}
+html[data-theme="dark"] .project-campus .project-display p,html[data-theme="dark"] .project-campus .project-display-top,html[data-theme="dark"] .project-campus .project-small{color:#d4def3}
+html[data-theme="dark"] .project-info h3,html[data-theme="dark"] .role strong{color:#edf1ff}
+html[data-theme="dark"] .project:hover .project-info h3{color:#b7c2ff}
+html[data-theme="dark"] .chips span{background:#27354d;color:#dce5ff}
+html[data-theme="dark"] .certificate-actions a:first-child{background:#b7c2ff;border-color:#b7c2ff;color:#17213b}
+html[data-theme="dark"] .certificate-actions a:first-child:hover{background:#d0d8ff}
+html[data-theme="dark"] .contact{background:#182746}
+html[data-theme="dark"] .contact-links a,html[data-theme="dark"] footer{border-color:#4b5b7a}
+@media(max-width:1000px){nav{gap:18px}}
+@media(max-width:700px){nav{gap:12px}.theme-toggle{padding:9px;min-width:44px;justify-content:center}.theme-label{display:none}.theme-symbol{font-size:22px}}
+@media(max-width:390px){nav a[href="#about"]{display:none}nav{gap:10px}}
+@media(prefers-reduced-motion:reduce){.theme-toggle{transition:none}}
